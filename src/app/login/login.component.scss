@@ -1,0 +1,25 @@
+.login {
+  .title {
+    font-weight: 600;
+  }
+  .label {
+    width: 8rem;
+  }
+  .text-align-left {
+    text-align: left;
+  }
+  .hospital-info {
+    background-color: #ffffff;
+    color: #000;
+    padding: 2rem;
+    .logo {
+      width: 40px;
+      height: 40px;
+    }
+    .hospital-name {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #0fadce;
+    }
+  }
+}

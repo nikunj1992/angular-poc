@@ -1,0 +1,98 @@
+<mat-card class="login">
+    <mat-card-content>
+        <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="1rem">
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <span class="title">REQUEST FOR ASSESSMENT</span>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-divider></mat-divider>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+                <div fxFlex="40">
+                    <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="1rem">
+                        <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="0.5rem">
+                            <div style="text-align: center;">TIME TO COMPLETE THIS REQUEST</div>
+                            <app-count-down style="padding-left: 6rem;"></app-count-down>
+                        </div>
+                        <div class="hospital-info">
+                            <div fxLayout="column" fxLayoutAlign="center stretch" fxLayoutGap="1rem">
+                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.5rem">
+                                    <div><img src="/assets/img/acme_logo.png" class="logo"></div>
+                                    <div class="hospital-name">ACME Hospital</div>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.5rem">
+                                    <div class="label" fxLayout="row" fxLayoutAlign="space-between center">
+                                        <div class="text-align-left">Assigned by</div>
+                                        <div>:</div>
+                                    </div>
+                                    <div>JOHN DOE</div>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.5rem">
+                                    <div class="label" fxLayout="row" fxLayoutAlign="space-between center">
+                                        <div class="text-align-left">Organization</div>
+                                        <div>:</div>
+                                    </div>
+                                    <div>ACME HOSPITAL</div>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.5rem">
+                                    <div class="label" fxLayout="row" fxLayoutAlign="space-between center">
+                                        <div class="text-align-left">Email</div>
+                                        <div>:</div>
+                                    </div>
+                                    <div>john.doe@acmehospital.com</div>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="0.5rem">
+                                    <div class="label" fxLayout="row" fxLayoutAlign="space-between center">
+                                        <div class="text-align-left">Phone Number</div>
+                                        <div>:</div>
+                                    </div>
+                                    <div>+1 (231) 435-3121</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div fxFlex="60">
+                    <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="1rem">
+                        <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="0.5rem">
+                            <div><strong>John Doe</strong> from <strong>ACME HOSPITAL</strong> has requested for Assessment about Contract Management Strategies.</div>
+                            <div>Provide your contact details below to receive a one-time passcode on your email and respond to the request</div>
+                        </div>
+                        <div fxLayout="column" fxLayoutAlign="start stretch" fxLayoutGap="1rem">
+                            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+                                <mat-form-field fxFlex appearance="outline">
+                                    <mat-label>First Name</mat-label>
+                                    <input matInput placeholder="Enter your first name...">
+                                  </mat-form-field>
+                                  <mat-form-field fxFlex appearance="outline">
+                                    <mat-label>Last Name</mat-label>
+                                    <input matInput placeholder="Enter your last name...">
+                                  </mat-form-field>
+                            </div>
+                            <div fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="1rem">
+                                <mat-form-field fxFlex appearance="outline">
+                                    <mat-label>Email Address</mat-label>
+                                    <input matInput placeholder="Enter your email address...">
+                                </mat-form-field>
+                                <mat-form-field fxFlex appearance="outline">
+                                    <mat-label>Phone Number</mat-label>
+                                    <input matInput placeholder="Enter your phone number...">
+                                </mat-form-field>
+                            </div>
+                            <div fxLayout="row" fxLayoutAlign="space-between center">
+                                <div fxLayout="row" fxLayoutAlign="start center"  fxLayoutGap="1rem">
+                                    <button mat-stroked-button>FORWARD</button>
+                                    <button mat-stroked-button>PREVIEW</button>
+                                </div>
+                                <div>
+                                    <button mat-raised-button (click)="generateOTP()">GENERATE ONE TIME PASSCODE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>
